@@ -31,7 +31,22 @@ class Keranjang:
             total_harga += node.harga
             node = node.next
         return total_harga
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!!!!!!!!!!!!!!!!! MANDA DISINIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        # fungsi yang mendefinisikan daftar menu
+def daftar_menu(nama_menu):
+        # mendefinisikan hasil input variabel yang digunakan untuk memanggil menu
+    if nama_menu == "1":
+        #membuat atau mendefiniskan menu berdasarkan input variabel
+return menu("miexue ice cream", 5000)
+    elif nama_menu == "2":
+return menu("mi ganas", 11000)
+    elif nama_menu == "3":
+return menu(mi sundae", 14000)
+    elif nama_menu == "4":
+return menu("boba shake", 16000)
+    elif nama_menu == "5":
+return menu("creamy mango boba", 22000)
+    else:
+        return none
 
 #  fungsi utama untuk proses pesanan
 def main():
