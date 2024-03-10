@@ -31,3 +31,53 @@ class Keranjang:
             total_harga += node.harga
             node = node.next
         return total_harga
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    !!!!!!!!!!!!!!!!!! MANDA DISINIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+#  fungsi utama untuk proses pesanan
+def main():
+    # menginisiasikan objek "keranjang" dari kelas Keranjang 
+    # untuk menyimpan pesanan yang di pilih
+    keranjang = Keranjang()
+    # Ini adalah perulangan yang akan berjalan selamanya 
+    # hingga pengguna memilih untuk keluar dari aplikasi.
+    while True:
+        print("1. Lihat menu ")
+        print("2. Tampilkan pesanan yang sudah ditambahkan")
+        print("3. Bayar pesanan")
+        print("4. Keluar")
+        pilihan = int(input("Masukkan pilihan: "))
+        if pilihan == 1:
+            print("""
+             Selamat Datang di Miexue
+    =================================================== 
+    Menu Miexue
+       
+    1. Miexue ice cream    : Rp. 5.000,-
+    2. Mi ganas            : Rp. 11.000,-
+    3. Mi sundae           : Rp. 14.000,-
+    4. Boba shake          : Rp. 16.000,-
+    5. Creamy mango boba   : Rp. 22.000,-
+    """)
+            nama_menu = input("Masukkan nomor menu yang ingin dipesan: ")
+            # Memanggil fungsi "daftar_menu" untuk mengambil menu yang dipesan 
+            menu = daftar_menu(nama_menu)
+            if menu:
+                keranjang.tambah_pesanan(menu)
+                print(f"{menu.nama} sudah ditambahkan ke keranjang")
+            else:
+                print("Menu tidak tersedia")
+        elif pilihan == 2:
+            # Memanggil metode 'tampilkan_pesanan' dari objek 'keranjang' yang mendefinisikan kelas "Keranjang" 
+            # untuk menampilkan pesanan dan mengembalikan total harga dari pesanan tersebut 
+            total_harga = keranjang.tampilkan_pesanan()
+            print(f"Total harga yang harus dibayarkan adalah {total_harga} rupiah")
+        elif pilihan == 3:
+            # Memanggil metode 'tampilkan_pesanan' dari objek 'keranjang' yang mendefinisikan kelas "Keranjang" 
+            # untuk menampilkan pesanan dan mengembalikan total harga dari pesanan tersebut 
+            total_harga = keranjang.tampilkan_pesanan()
+            print(f"Total biaya yang harus dibayarkan adalah {total_harga} rupiah, terimakasih sudah memesan")
+        elif pilihan == 4:
+            break
+        else:
+            print("Pilihan tidak valid")
+main()
