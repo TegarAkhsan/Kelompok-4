@@ -1,0 +1,33 @@
+# membuat class untuk node baru nama dari pesanan dan harga
+class Menu:
+    # fungsi yang akan dijalankan ketika objek dari class ini 
+    # dibuat dengan membuat node untuk definisi nama dan harga
+    def __init__(self, nama, harga):
+        self.nama = nama
+        self.harga = harga
+        self.next = None 
+
+# membuat class untuk linkedlist
+class Keranjang:
+    # membuat linked list kosong 
+    # dengan mendefinisikan head sebagai None
+    def __init__(self):
+        self.head = None
+    
+    # menambahkan menu yang dipilih ke keranjang 
+    def tambah_pesanan(self, menu):
+        newnode = Menu(menu.nama, menu.harga)
+        newnode.next = self.head
+        self.head = newnode
+
+    # mengembalikan jumlah item di dalam keranjang
+    def tampilkan_pesanan(self):
+        # variabel 'total_harga' berfungsi sebagai penyimpan total harga dari pesanan 
+        total_harga = 0
+        node = self.head
+        # perulangan selama ada next node
+        while node:
+            print(f"{node.nama} {node.harga} rupiah")
+            total_harga += node.harga
+            node = node.next
+        return total_harga
