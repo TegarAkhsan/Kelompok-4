@@ -1,1 +1,41 @@
+class PetaJateng:
+    def __init__(self):
+        self.listkota = {}
+    
+    def printPeta(self):
+        for kota in self.listkota:
+            print(kota, ":",self.listkota[kota])
+        
+    def tambahkanKota(self,kota):
+        if kota not in self.listkota:
+            self.listkota[kota] = []
+            return True
+        return False
+    
+    def hapusKota(self,kotaDihapus):
+        #cek apakah kota yang ingin dihapus ada di list
+        if kotaDihapus in self.listkota:
+        #iterasi setiap kotalain untuk hapus kotadihapus
+            for kotalain in self.listkota:
+                #cek apakah kota yang ingin dihapus ada jalannya ke kotalain
+                if kotaDihapus in self.listkota[kotalain]:
+                    self.listkota[kotalain].remove(kotaDihapus)
+            del self.listkota[kotaDihapus]
+            return True
+        return False
 
+petaJawaTengah = PetaJateng()
+petaJawaTengah.tambahkanKota("Kudus")
+petaJawaTengah.tambahkanKota("Pati")
+petaJawaTengah.tambahkanKota("Demak")
+petaJawaTengah.tambahkanKota("Semarang")
+petaJawaTengah.tambahkanKota("Rembang")
+petaJawaTengah.tambahkanKota("Kendal")
+petaJawaTengah.tambahkanKota("Jepara")
+petaJawaTengah.tambahkanKota("Salatiga")
+petaJawaTengah.tambahkanKota("Surakarta")
+petaJawaTengah.tambahkanKota("Grobogan")
+petaJawaTengah.tambahkanKota("Blora")
+petaJawaTengah.tambahkanKota("Sragen")
+petaJawaTengah.tambahkanKota("Temanggung")
+petaJawaTengah.tambahkanKota("Boyolali")
