@@ -39,3 +39,60 @@ petaJawaTengah.tambahkanKota("Blora")
 petaJawaTengah.tambahkanKota("Sragen")
 petaJawaTengah.tambahkanKota("Temanggung")
 petaJawaTengah.tambahkanKota("Boyolali")
+
+# -----------Kudus------------  #LINE 61 MANDA TOLONG HAPUS SETELAH DIBACA
+petaJawaTengah.tambahkanJalan("Kudus","Demak")
+petaJawaTengah.tambahkanJalan("Kudus","Pati")
+petaJawaTengah.tambahkanJalan("Kudus","Jepara")
+petaJawaTengah.tambahkanJalan("Kudus","Grobogan")
+
+# -----------Pati------------
+petaJawaTengah.tambahkanJalan("Pati","Rembang")
+petaJawaTengah.tambahkanJalan("Pati","Blora")
+petaJawaTengah.tambahkanJalan("Pati","Grobogan")
+
+# -----------Semarang------------
+petaJawaTengah.tambahkanJalan("Semarang","Kendal")
+petaJawaTengah.tambahkanJalan("Semarang","Salatiga")
+petaJawaTengah.tambahkanJalan("Semarang","Demak")
+
+# -----------Kendal------------
+petaJawaTengah.tambahkanJalan("Kendal","Batang")
+petaJawaTengah.tambahkanJalan("Kendal","Salatiga")
+petaJawaTengah.tambahkanJalan("Kendal","Temanggung")
+
+# -----------Surakarta------------
+petaJawaTengah.tambahkanJalan("Surakarta","Salatiga")
+petaJawaTengah.tambahkanJalan("Surakarta","Grobogan")
+petaJawaTengah.tambahkanJalan("Surakarta","Boyolali")
+petaJawaTengah.tambahkanJalan("Surakarta","Sragen")
+
+# -----------Rembang------------
+petaJawaTengah.tambahkanJalan("Rembang","Grobogan")
+petaJawaTengah.tambahkanJalan("Rembang","Blora")
+
+# -----------Jepara------------
+petaJawaTengah.tambahkanJalan("Jepara","Demak")
+
+# -----------Blora------------
+petaJawaTengah.tambahkanJalan("Blora","Sragen")
+petaJawaTengah.tambahkanJalan("Blora","Grobogan")
+
+# -----------Salatiga------------
+petaJawaTengah.tambahkanJalan("Salatiga","Grobogan")
+petaJawaTengah.tambahkanJalan("Salatiga","Boyolali")
+
+# -----------Grobogan------------
+petaJawaTengah.tambahkanJalan("Grobogan","Sragen")
+petaJawaTengah.tambahkanJalan("Grobogan","Demak")
+petaJawaTengah.tambahkanJalan("Grobogan","Semarang")
+petaJawaTengah.tambahkanJalan("Grobogan","Boyolali")
+
+# -----------Temanggung------------
+petaJawaTengah.tambahkanJalan("Temanggung","Salatiga")
+petaJawaTengah.tambahkanJalan("Temanggung","Boyolali")
+
+petaJawaTengah.printPeta()
+# print('------------------------------')
+# petaJawaTengah.hapusKota("Pati")
+# petaJawaTengah.printPeta()
